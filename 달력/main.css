@@ -1,0 +1,34 @@
+body {
+    margin: initial;
+    padding: initial;
+}
+ol {
+    list-style-type: none;
+}
+
+.calender{
+    width: 80%;
+    height: auto;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.calender_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.calender li {
+    padding: 20px;
+}
+
+td {
+    text-align: center;
+}
+
+
+tbody td:nth-child(1), th:nth-child(1){
+    color: red;
+}

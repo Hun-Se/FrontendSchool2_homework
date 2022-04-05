@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +10,24 @@
 </head>
 
 <body>
-    <header>
-        <h1>나와 잘 맞는 회사는?</h1>
-        <p class="comment">가고 싶은 회사에 대한 호감도를 조사합니다. 아이고 의미없다.</p>
-        <article class="article_email">
-            <button class="btn_hide"><img class="icon_hide" src="images/hide.png" alt="hide_button"></button>
-            <p>qwerty@gmail.com(공유되지 않음)
-                <a href="">
-                    계정 전환
-                </a>
-            </p>
-            <button><img class="icon_cloud" src="images/cloud.png" alt="cloud"></button>
-        </article>
-    </header>
-    <section class="like_text_list">
-        <h2>
-            다음 문자중에 웬지 마음에 드는 것을 하나 고르세요.
-        </h2>
-        <form action="">
+    <form action="" method="get">
+        <header>
+            <h1>나와 잘 맞는 회사는?</h1>
+            <p class="comment">가고 싶은 회사에 대한 호감도를 조사합니다. 아이고 의미없다.</p>
+            <article class="article_email">
+                <button class="btn_hide"><img class="icon_hide" src="images/hide.png" alt="hide_button"></button>
+                <span>qwerty@gmail.com(공유되지 않음)
+                    <a href="">
+                        계정 전환
+                    </a>
+                </span>
+                <button><img class="icon_cloud" src="images/cloud.png" alt="cloud"></button>
+            </article>
+        </header>
+        <section class="like_text_list">
+            <h2>
+                다음 문자중에 웬지 마음에 드는 것을 하나 고르세요.
+            </h2>
             <ul>
                 <li>
                     <input type="radio" id="na" name="like_text">
@@ -49,77 +50,69 @@
                     <label for="ba">베</label>
                 </li>
             </ul>
-        </form>
-    </section>
-    <section class="messenger_list">
-        <h2>친구와 문자를 합니다. 다음중 어떤 메신저를 이용하시겠습니까? 모두 골라주세요.</h2>
-        <ul>
-            <li>
-                <input type="checkbox" id="kakao" name="messenger">
-                <label for="kakao">카카오톡</label>
-            </li>
-            <li>
-                <input type="checkbox" id="line" name="messenger">
-                <label for="line">라인</label>
-            </li>
-            <li>
-                <input type="checkbox" id="instagram" name="messenger">
-                <label for="instagram">인스타그램</label>
-            </li>
-            <li>
-                <input type="checkbox" id="nate" name="messenger">
-                <label for="nate">네이트</label>
-            </li>
-            <li>
-                <input type="checkbox" id="burdy" name="messenger">
-                <label for="burdy">버디버디</label>
-            </li>
-        </ul>
-    </section>
-    <section class="intro_list">
-        <h2>면접에서 자신의 포부를 한 문장으로 예기한다면?</h2>
-        <form action="">
+        </section>
+        <section class="messenger_list">
+            <h2>친구와 문자를 합니다. 다음중 어떤 메신저를 이용하시겠습니까? 모두 골라주세요.</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="kakao" name="messenger">
+                    <label for="kakao">카카오톡</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="line" name="messenger">
+                    <label for="line">라인</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="instagram" name="messenger">
+                    <label for="instagram">인스타그램</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="nate" name="messenger">
+                    <label for="nate">네이트</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="burdy" name="messenger">
+                    <label for="burdy">버디버디</label>
+                </li>
+            </ul>
+        </section>
+        <section class="intro_list">
+            <h2>면접에서 자신의 포부를 한 문장으로 예기한다면?</h2>
             <input type="text" id="intro" name="intro" placeholder="내 답변">
-        </form>
-    </section>
-    <section class="job_interview">
-        <h2>당신은 지금 한 기업의 최종면접을 앞두고 있습니다. 면접장에 들어가기 직전, 자기자신에게 직접 해주고 싶은말은?</h2>
-        <form action="">
+        </section>
+        <section class="job_interview">
+            <h2>당신은 지금 한 기업의 최종면접을 앞두고 있습니다. 면접장에 들어가기 직전, 자기자신에게 직접 해주고 싶은말은?</h2>
             <input type="text" id="job_interview" name="job_interview" placeholder="내 답변">
-        </form>
+        </section>
         <section class="no_answer">
             <h2>다음 중 기술면접때 듣고 싶은 질문인 아닌 것은?</h2>
-            <form action="">
-                <select id="no_answer" name="no_answer" size="3">
-                    <option value="">선택</option>
-                    <option value="1">경력있으세요?</option>
-                    <option value="2">왜 여기 지원했어요?</option>
-                    <option value="3">학교 어디 나오셨어요?</option>
-                    <option value="4">얼마나 일하실꺼에요</option>
-                </select>
-            </form>
+            <select id="no_answer" name="no_answer" size="3">
+                <option value="0" selected disabled>선택</option>
+                <option value="1">경력있으세요?</option>
+                <option value="2">왜 여기 지원했어요?</option>
+                <option value="3">학교 어디 나오셨어요?</option>
+                <option value="4">얼마나 일하실꺼에요</option>
+            </select>
         </section>
         <section class="date">
             <h2>취업을 희망하는 날짜를 선택해주세요.</h2>
-            <form action="">
-                <div>
-                    <label for="date">날짜</label>
-                </div>
-                <input type="date" id="date" name="date">
-            </form>
+            <div>
+                <label for="date">날짜</label>
+            </div>
+            <input type="date" id="date" name="date">
         </section>
         <section class="time">
             <h2>취업을 희망하는 날짜를 선택해주세요.</h2>
-            <form action="">
-                <div>
-                    <label for="time">날짜</label>
-                </div>
-                <input type="time" id="time" name="time">
-            </form>
+            <div>
+                <label for="time">날짜</label>
+            </div>
+            <input type="time" id="time" name="time">
         </section>
         <section class="btn_wrap">
             <button type="submit" class="submit_btn">제출</button>
-            <button type="clear">양식지우기</button>
+            <button type="reset">양식지우기</button>
         </section>
+    </form>
 </body>
+
 </html>

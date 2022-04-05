@@ -1,4 +1,13 @@
+body ul{
+    margin: initial;
+    padding: initial;
+}
 
+ul {
+    margin: initial;
+    padding: initial;
+    list-style-type: none;
+}
 
 button {
     background: inherit ;
